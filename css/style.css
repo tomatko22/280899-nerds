@@ -1,3 +1,9 @@
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	font-size: 16px;
 	line-height: 24px;
@@ -10,7 +16,7 @@ h1 {
 	font-size: 55px;
 	line-height: 55px;
 	color: #000000;
-	font-weight: medium;
+	font-weight: medium; 
 	font-family: "Roboto", "Tahoma", sans-serif;
 }
 
@@ -21,3 +27,143 @@ h2 {
 	font-weight: medium;
 	font-family: "Roboto", "Tahoma", sans-serif;
 }
+
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.main-header {
+	margin-bottom: 80px;
+	margin-top: 49px;
+}
+
+.logo {
+	width: 160px;
+	height: 65px;
+	float: left;
+	margin-right: 40px;
+}
+
+.nav {
+min-height: 65px;
+
+	width: 760px;
+	float: left;
+	margin-right: 40px;
+	
+}
+
+.cart {
+min-height: 35px;
+
+	width: 120px;
+	float: right;
+	margin-right: 0px;
+}
+
+.slogan {
+	width: 380px;
+	float: left;
+}
+
+.slider {
+	width: 760px;
+	float: right;
+}
+
+.category {
+	margin-bottom: 78px;
+}
+
+.category-item {
+	width: 300px;
+	float: left;
+	margin-right: 100px;
+}
+
+.category-item:last-child {
+	margin-right: 60px;
+}
+
+.info {
+min-height: 450px;
+
+	margin-bottom: 76px;
+}
+
+.info-1 {
+	width: 660px;
+	float: left;
+	margin-right: 140px;
+	
+}
+
+.info-2 {
+	width: 360px;
+	float: left;
+	margin-right: 0px;
+}
+.block {
+	width: 100px;
+	float: left;
+	margin-right: 20px;
+}
+.block:last-child {
+	width: 104px;
+	float: left;
+	margin-right: 16px;
+}
+.clients {
+min-height: 182px;
+
+	margin-bottom: 80px;
+}
+
+.clients-logo {
+	width: 260px;
+	float: left;
+	margin-right: 40px;
+}
+.clients-logo:last-child {
+	margin-right: 0px;
+}
+.map {
+min-height: 415px;
+
+	margin-bottom: 40px;
+}
+
+.contacts {
+min-height: 310px;
+
+	width: 320px;
+	float: left;
+	margin-top: 55px;
+}
+
+.footer {
+min-height: 66px;
+}
+
+.social {
+	width: 260px;
+	float: left;
+	margin-right: 140px;
+}
+
+.call {
+	width: 560px;
+	float: left;
+}
+
+
+/*min-height:; временные для создания сетки*/
