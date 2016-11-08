@@ -33,9 +33,9 @@
 	<main class="container catalog">
 			<!-- левая колонка -->
 				<div class="left-column">
-					<form class="left-column" action="#" method="post">
+					<form action="#" method="post">
 						<div class="filter">
-							<h3 class="filter">стоимость:</h3>
+							<h3>стоимость:</h3>
 							<div class="range-controls">
 								<div class="scale">
 									<div class="strip"></div>
@@ -50,31 +50,31 @@
 									<input class="price-min" type="text" name="number" value="15 000">
 							</div>
 						</div>
-						<h3 class="filter">сетка</h3>
-						<label>
-							<input type="radio" name="index" value="adaptive" checked>Адаптивная<br>
+						<h3>сетка</h3>
+						<label class="radio">
+							<input type="radio" name="index" value="adaptive" checked>Адаптивная
 						</label>
-						<label>
-							<input type="radio" name="index" value="Fixed">Фиксированная<br>
+						<label class="radio">
+							<input type="radio" name="index" value="Fixed">Фиксированная
 						</label>
-						<label>
-							<input type="radio" name="index" value="Rubber">Резиновая<br>
+						<label class="radio">
+							<input type="radio" name="index" value="Rubber">Резиновая
 						</label>
 						<h3>особенности:</h3>
-						<label>
-							<input type="checkbox" name="slider" checked>Слайдер<br>
+						<label class="checkbox">
+							<input type="checkbox" name="slider" checked>Слайдер
 						</label>
-						<label>
-							<input type="checkbox" name="plus">Блок преимуществ<br>
+						<label class="checkbox">
+							<input type="checkbox" name="plus">Блок преимуществ
 						</label>
-						<label>
-							<input type="checkbox" name="news" checked>Новости<br>
+						<label class="checkbox">
+							<input type="checkbox" name="news" checked>Новости
 						</label>
-						<label>
-							<input type="checkbox" name="gallery">Галерея<br>
+						<label class="checkbox">
+							<input type="checkbox" name="gallery">Галерея
 						</label>
-						<label>
-							<input type="checkbox" name="cart">Корзина<br>
+						<label class="checkbox">
+							<input type="checkbox" name="cart">Корзина
 						</label>
 						<button type="submit" name="show">показать</button>
 					</form>
@@ -106,9 +106,9 @@
 					<div class="product-page">
 						<article class="item-card sedona">
 							<div class="index">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
 							<img src="img/sedona.jpg" width="360" height="576" alt="sedona">
 							<div class="info">
@@ -119,43 +119,68 @@
 						</article>
 						<article class="item-card pink">
 							<div class="index">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
-								<img src="img/pink.jpg" width="360" height="576" alt="pink">
+							<img src="img/pink.jpg" width="360" height="576" alt="pink">
+							<div class="info">
+								<p>pink app</p>
+								<p>Продуктовый лендинг приложения для iOS и Android</p>
+								<a href="#">9900 руб.</a>
+							</div>
 						</article>
 						<article class="item-card borodinsky">
 							<div class="index">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
 							<img src="img/borodinsky.jpg" width="360" height="576" alt="borodinsky">
+							<div class="info">
+								<p>barbershop</p>
+								<p>Сайт салоны красоты. Для мужчин, да.</p>
+								<a href="#">9900 руб.</a>
+							</div>
 						</article>
 						<article class="item-card mishka">
 							<div class="index">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
 							<img src="img/mishka.jpg" width="360" height="576" alt="mishka">
-						</article>
-						<article class="item-card htmlacademy">
-							<div class="index">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>
+							<div class="info">
+								<p>mishka</p>
+								<p>Интернет-магазин вязаных игрушек</p>
+								<a href="#">9900 руб.</a>
 							</div>
-							<img src="img/academy.jpg" width="360" height="576" alt="academy">
+						</article>
+						<article class="item-card aplus">
+							<div class="index">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<img src="img/aplus.jpg" width="360" height="576" alt="aplus">
+							<div class="info">
+								<p>a plus</p>
+								<p>Лендинг курсов повышения квалификации</p>
+								<a href="#">9900 руб.</a>
+							</div>
 						</article>
 						<article class="item-card kvast">
 							<div class="index">
-								<span>.</span>
-								<span>.</span>
-								<span>.</span>
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
 							<img src="img/kvast.jpg" width="360" height="576" alt="kvast">
+							<div class="info">
+								<p>kvast</p>
+								<p>Промо-сайт производителя крафтового кваса</p>
+								<a href="#">9900 руб.</a>
+							</div>
 						</article>
 					</div>
 					<div class="pagination">
@@ -166,17 +191,18 @@
 					</div>
 				</div>
   </main>
-			<div class="map">
-				<img class="map" src="img/map.jpg" width="1440" height="416" alt="map">
-				<div class="conteiner contacts">
+		<section class="map">
+			<div class="conteiner">
+				<div class="contacts">
 					<p class="uppercase">nёrds design studio</p>
 					<p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p class="phone">тел. +7 (812) 275-75-75</p>
 					<div class="mail">
 						<a href="#">напишите нам</a>
 					</div>
-				</div>	
+				</div>
 			</div>
+		</section>
 	<footer class="footer">
 		<div class="conteiner">
 			<div class="social">
