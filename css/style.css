@@ -224,12 +224,6 @@ outline: 1px solid purple;
 	width: 271px;
 }
 
-/*.sorting-item {
-	display: inline-block;
-vertical-align: top;
-margin-right: 50px;
-outline: 1px solid blue;
-}*/
 
 .sorting-icon {
 	display: inline-block;
@@ -300,9 +294,7 @@ h3 {
 	line-height: 30px;
 	font-weight: 700;
 	font-family: "Roboto", "Tahoma", sans-serif;
-
-display: inline-block;
-margin-top: 0px;
+	margin-top: 0px;
 
 outline: 1px solid blue;
 }
@@ -338,32 +330,32 @@ min-height: 50px;
 
 .number {
 	width: 50px;
-display: inline-block;
-vertical-align: bottom;
-margin-right: 10px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 10px;
+	background-color:#eeeeee;
+	text-align: center;
+	padding-top: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
 min-height: 32px;	
 outline: 1px solid blue;
-background-color:#eeeeee;
-text-align: center;
-padding-top: 18px;
-text-decoration: none;
-text-transform: uppercase;
-color: #000000;
 }
 
 .next {
 	width: 263px;
-display: inline-block;
-vertical-align: bottom;
-margin-right: 10px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 10px;
+	background-color:#eeeeee;
+	text-align: center;
+	padding-top: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
 min-height: 32px;	
 outline: 1px solid blue;
-background-color:#eeeeee;
-text-align: center;
-padding-top: 18px;
-text-decoration: none;
-text-transform: uppercase;
-color: #000000;
 }
 
 .pagination {
