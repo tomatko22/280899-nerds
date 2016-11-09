@@ -4,54 +4,56 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
 	<link href="css/style.css" rel="stylesheet">
+	<<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 <!-- хэдер -->
 	<header class="main-header">
-		<div class="container">
-			<div class="header-top clearfix">
-				<a href="#"><img class="logo" src="img/logo.png" width="160" height="65" alt="Нёрдс"></a>
-				<div class="nav">
-					<ul class="uppercase-medium">
-						<li><a href="#">студия</a></li>
-						<li><a href="#">клиенты</a></li>
-						<li><a href="catalog.html">магазин</a></li>
-						<li><a href="#">контакты</a></li>
-					</ul>
-				</div>
-				<div class="cart">
-					<img class="cart-img" src="http://placehold.it/18x15" alt="корзина">
-					<a href="#">корзина</a>
-				</div>	
+		<div class="container clearfix">
+			<img class="logo" src="img/logo.png" width="160" height="65" alt="Нёрдс">
+			<div class="nav">
+				<ul class="uppercase-medium">
+					<li><a href="#">студия</a></li>
+					<li><a href="#">клиенты</a></li>
+					<li><a href="catalog.html">магазин</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
 			</div>
-			<div class="header-bottom clearfix">
-				<div class="slogan">
-					<h1>Долго, дорого, скрупулезно.</h1>
-					<p class="slogan-inner">математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-					<div class="more">
-						<a href="#">узнать больше</a>
-					</div>
-				</div>
-				<div class="slider">
-					<input type="radio" id="btn-1" name="toggle" checked>
-        	<input type="radio" id="btn-2" name="toggle">
-        	<input type="radio" id="btn-3" name="toggle">
-        	<div class="slider-controls">
-          	<label for="btn-1"></label>
-          	<label for="btn-2"></label>
-          	<label for="btn-3"></label>
-        	</div>
-        	<div class="slider-inner">
-          	<div class="slider-slides">
-            	<img src="img/slider-1.png" width="760" height="431" alt="слайдер1">
-            	<img src="img/slider-2.png" width="760" height="431" alt="слайдер2">
-            	<img src="img/slider-3.png" width="760" height="431" alt="слайдер3">
-          	</div>
-        	</div>
-				</div>
+			<div class="cart">
+				<img class="cart-img" src="http://placehold.it/18x15" alt="корзина">
+				<a href="#">корзина</a>
 			</div>
 		</div>
 	</header>
+
+	<div class="wrapper clearfix">
+		<div class="container">
+			<div class="slogan">
+				<h1>Долго, дорого, скрупулезно.</h1>
+				<p class="slogan-inner">математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+				<div class="more">
+					<a href="#">узнать больше</a>
+				</div>
+			</div>
+			<div class="slider">
+				<input type="radio" id="btn-1" name="toggle" checked>
+      	<input type="radio" id="btn-2" name="toggle">
+      	<input type="radio" id="btn-3" name="toggle">
+      	<div class="slider-controls">
+        	<label for="btn-1"></label>
+        	<label for="btn-2"></label>
+        	<label for="btn-3"></label>
+      	</div>
+      	<div class="slider-inner">
+        	<div class="slider-slides">
+          	<img src="img/slider-1.png" width="760" height="431" alt="слайдер1">
+          	<img src="img/slider-2.png" width="760" height="431" alt="слайдер2">
+          	<img src="img/slider-3.png" width="760" height="431" alt="слайдер3">
+        	</div>
+      	</div>
+			</div>
+		</div>
+	</div>
 <!-- осн -->
 	<main class="container">
 		<div class="category clearfix">
@@ -120,7 +122,7 @@
 		</div>
 	</main>
 	<div class="map clearfix">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="contacts">
 				<p class="uppercase">nёrds design studio</p>
 				<p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
