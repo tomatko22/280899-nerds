@@ -1,0 +1,137 @@
+.write {
+  visibility: hidden;
+  position: absolute;
+
+  top: 1725px;
+  left: 50%;
+  width: 960px;
+
+  display: flex;
+  flex-direction: column;
+
+  transform: translatex(-435px);
+  padding: 68px 100px;
+  padding-bottom: 85px;
+  background-color: white;
+
+  box-shadow: 0 15px 25px 0px #5e5f5f;
+  box-sizing: border-box;
+}
+
+.write__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+.write__title {
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.write__title::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/sprite.png");
+  background-position: -10px -131px;
+  opacity: 0.3;
+}
+.write__title:hover::after {
+  opacity: 1;
+}
+.write__title:active::after {
+  opacity: 0.1;
+}
+.write__wrapp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.write__wrapp:last-child {
+  flex-grow: 1;
+  margin-bottom: 50px;
+}
+
+.write__label {
+  width: 200px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.write__input {
+  width: 360px;
+  margin-right: 40px;
+  padding: 15px 15px;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  box-sizing: border-box;
+  line-height: 18px;
+  color: #a3a3a3;
+
+  &--email {
+    margin-right: 0;
+  }
+
+  &--error {
+
+  }
+}
+.write__input:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.write__input:focus {
+  color: #444444;
+  border: 2px solid #000000;
+}
+.write__input:invalid {
+  border: 2px solid #e74246;
+  box-shadow: none;
+  color: #e74246;
+}
+.write__textarea {
+  padding: 10px 12px;
+  border: 2px solid #d7dcde;
+  box-sizing: border-box;
+  line-height: 18px;
+  color: #a3a3a3;
+}
+
+.write__textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.write__textarea:focus {
+  color: #444444;
+  border: 2px solid #000000;
+}
+
+.write-btn {
+  width: 260px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  line-height: 18px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fb565a;
+}
+.write-btn:hover {
+  background-color: #e74246;
+}
+.write-btn:active {
+  background-color: #d7373b;
+  color: #e48789;
+}

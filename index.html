@@ -9,144 +9,190 @@
 </head>
 <body>
 <!-- хэдер -->
-	<header class="main-header">
-		<div class="container clearfix">
-			<img class="logo" src="img/logo.png" width="160" height="65" alt="Нёрдс">
-			<div class="nav">
-				<ul class="uppercase-medium">
-					<li><a href="#">студия</a></li>
-					<li><a href="#">клиенты</a></li>
-					<li><a href="catalog.html">магазин</a></li>
-					<li><a href="#">контакты</a></li>
-				</ul>
-			</div>
-			<div class="cart">
-				<img class="cart-img" src="http://placehold.it/18x15" alt="корзина">
-				<a href="#">корзина</a>
-			</div>
-		</div>
-	</header>
+<header class="page-header">
+  <div class="page-header__container">
+    <div class="page-header__top">
+      <div class="logo">
+        <a class="logo__link" href="index.html"><img class="logo__img" src="img/logo.png"></a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Студия</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Клиенты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart-block">
+        <a class="cart-block__link" href="#">Корзина</a>
+      </div>
+    </div>
+    <div class="slider">
+      <input class="slider__input" type="radio" name="slider" id="btn-1" checked>
+      <input class="slider__input" type="radio" name="slider" id="btn-2">
+      <input class="slider__input" type="radio" name="slider" id="btn-3">
+      <div class="slider__toggles">
+        <label class="slider__toggle slider__toggle--one" for="btn-1"></label>
+        <label class="slider__toggle slider__toggle--two" for="btn-2"></label>
+        <label class="slider__toggle slider__toggle--three" for="btn-3"></label>
+      </div>
+      <div class="slider__slides">
+        <div class="slider__slide slider__slide--one">
+          <div class="slider__slide-text">
+            <div class="slider__slide-title">Долго, дорого, скрупулезно</div>
+            <p class="slider__slide-paragraph">Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slider__slide slider__slide--two">
+          <div class="slider__slide-text">
+            <div class="slider__slide-title slider__slide-title--two">Любим математику как никто другой</div>
+            <p class="slider__slide-paragraph">Никакого креатива, только математические формулы<br>
+              для расчета идеальных пропорций.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slider__slide slider__slide--three">
+          <div class="slider__slide-text">
+            <div class="slider__slide-title slider__slide-title--three">Только ночь, только хардкор</div>
+            <p class="slider__slide-paragraph">Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-	<div class="wrapper clearfix">
-		<div class="container">
-			<div class="slogan">
-				<h1>Долго, дорого, скрупулезно.</h1>
-				<p class="slogan-inner">математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-				<div class="more">
-					<a href="#">узнать больше</a>
-				</div>
-			</div>
-			<div class="slider">
-				<input type="radio" id="btn-1" name="toggle" checked>
-      	<input type="radio" id="btn-2" name="toggle">
-      	<input type="radio" id="btn-3" name="toggle">
-      	<div class="slider-controls">
-        	<label for="btn-1"></label>
-        	<label for="btn-2"></label>
-        	<label for="btn-3"></label>
-      	</div>
-      	<div class="slider-inner">
-        	<div class="slider-slides">
-          	<img src="img/slider-1.png" width="760" height="431" alt="слайдер1">
-          	<img src="img/slider-2.png" width="760" height="431" alt="слайдер2">
-          	<img src="img/slider-3.png" width="760" height="431" alt="слайдер3">
-        	</div>
-      	</div>
-			</div>
-		</div>
-	</div>
+
 <!-- осн -->
-	<main class="container">
-		<div class="category clearfix">
-			<section class="category-item">
-				<img class="web" src="img/illustration-1.jpg" width="300" height="146" alt="иллюстрация1">
-				<p class="category-item uppercase">веб-сайты</p>
-				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-				<a class="web-btn" href="#">заказать</a>
-			</section>
-			<section class="category-item">
-				<img class="apps" src="img/illustration-2.jpg" width="300" height="146" alt="иллюстрация2">
-				<p class="category-item uppercase">приложения</p>
-				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a class="apps-btn" href="#">заказать</a>
-			</section>
-			<section class="category-item">
-				<img class="presentations" src="img/illustration-3.jpg" width="300" height="146" alt="иллюстрация3">
-				<p class="category-item uppercase">презентации</p>
-				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-				<a class="presentations-btn" href="#">заказать</a>
-			</section>
-		</div>
-		<div class="info clearfix">
-			<div class="info-1">
-				<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-				<div class="services">
-					<p class="uppercase">выполняем заказы на разработку:</p>
-					<ul class="uppercase-regular">
-						<li>Веб-сайтов любой сложности</li>
-						<li>Мобильных приложений для iOS и Android</li>
-						<li>Слайдшоу и видео для корпоративных презентаций</li>
-					</ul>
-				</div>
-			</div>
-			<div class="info-2 clearfix">
-				<img class="logo-2" src="img/nerds-2.jpg" width="360" height="208" alt="Нердс2">
-				<p class="uppercase">с 2004 года любим точность во всем:</p>
-				<div class="block">
-					<h2>146<sup>%</sup></h2>
-					<p>Уровень самоотдачи</p>
-				</div>
-				<div class="block">
-					<h2>100<sup>%</sup></h2>
-					<p>Соблюдение сроков</p>
-				</div>
-				<div class="block">
-					<h2>50<sup>%</sup></h2>
-					<p>Минимальная предоплата</p>
-				</div>
-			</div>
-		</div>
-		<div class="clients clearfix">
-			<a href="#">htmlacademy
-				<img class="clients-logo" src="img/logo-1.png" width="199" height="68" alt="htmlacademy">
-			</a>
-			<a href="#">Borodinsky
-				<img class="clients-logo" src="img/logo-2.png" width="209" height="90" alt="Borodinsky">
-			</a>
-			<a href="#">pink
-				<img class="clients-logo" src="img/logo-3.png" width="185" height="52" alt="Pink">
-			</a>
-			<a href="#">mishka
-				<img class="clients-logo" src="img/logo-4.png" width="173" height="84" alt="Mishka">
-			</a>
-		</div>
-	</main>
-	<div class="map clearfix">
-		<div class="container clearfix">
-			<div class="contacts">
-				<p class="uppercase">nёrds design studio</p>
-				<p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				<p class="phone">тел. +7 (812) 275-75-75</p>
-				<div class="mail uppercase-medium">
-					<a href="#">напишите нам</a>
-				</div>
-			</div>
-		</div>	
-	</div>
+<main class="main">
+  <div class="main__container">
+    <div class="offers">
+      <div class="offers__offer offers__offer--sites">
+        <div class="offers__offer-title">веб-сайты</div>
+        <p class="offers__offer-descript">Мир никогда не будет прежним после того как увидит ваш<br> сайт!</p>
+        <a class="offer-btn--sites" href="#">заказать</a>
+      </div>
+      <div class="offers__offer offers__offer--apps">
+        <div class="offers__offer-title">приложения</div>
+        <p class="offers__offer-descript">Покорите топ-10 приложений в AppStore и Google Play</p>
+        <a class="offer-btn--apps" href="#">заказать</a>
+      </div>
+      <div class="offers__offer offers__offer--presentations">
+        <div class="offers__offer-title">презентации</div>
+        <p class="offers__offer-descript">Вы даже не подозреваете, насколько вы изумительны!</p>
+        <a class="offer-btn--presentations" href="#">заказать</a>
+      </div>
+    </div>
+    <div class="description">
+      <div class="description__item-1">
+        <div class="description__lead">Мы - маленькая, но гордая дизайн-студия из Краснодара.</div>
+        <p class="description__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <div class="description__title-list">выполняем заказы на разработку:</div>
+        <span class="description__list-item">Веб-сайтов любой сложности</span>
+        <span class="description__list-item">Мобильных приложений для iOS и Android</span>
+        <span class="description__list-item">Слайдшоу и видео для корпоративных презентаций</span>
+      </div>
+      <div class="description__item-2">
+        <div class="description__logo">
+          <img class="description__logo-img" src="img/nerds-2.jpg">
+        </div>
+        <div class="description__standarts">С 2004 года любим точность во всем:</div>
+        <div class="description__standarts-list">
+          <div class="description__standarts-item">
+            <span class="description__standart-num">146</span>
+            <span class="description__standart-percent">%</span>
+            <span class="description__standart-text">Уровень самоотдачи</span>
+          </div>
+          <div class="description__standarts-item">
+            <span class="description__standart-num">100</span>
+            <span class="description__standart-percent">%</span>
+            <span class="description__standart-text">Соблюдение сроков</span>
+          </div>
+          <div class="description__standarts-item">
+            <span class="description__standart-num">50</span>
+            <span class="description__standart-percent">%</span>
+            <span class="description__standart-text">Минимальная предоплата</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="logos">
+      <div class="logos__item">
+        <a class="logos__link" href="#">
+          <img class="logos__img" src="img/logo-1.png" width="198" height="68">
+        </a>
+      </div>
+      <div class="logos__item">
+        <a class="logos__link" href="#">
+          <img class="logos__img" src="img/logo-2.png" width="209" height="90">
+        </a>
+      </div>
+      <div class="logos__item logos__item--pink">
+        <a class="logos__link" href="#">
+          <img class="logos__img" src="img/logo-3.png" width="185" height="52">
+        </a>
+      </div>
+      <div class="logos__item">
+        <a class="logos__link" href="#">
+          <img class="logos__img" src="img/logo-4.png" width="173" height="84">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="map__contacts">
+      <div class="map__contacts-title">n&#203;rds design studio</div>
+      <div class="map__contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/3</div>
+      <div class="map__contacts-phone">тел. +7 (812) 275-75-75</div>
+      <button class="map-btn">напишите нам</button>
+    </div>
+  </div>
+</main>
+
 <!-- футер -->
-	<footer class="footer">
-		<div class="container clearfix">
-			<div class="social">
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      	<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-      	<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-			</div>
-			<div class="call">
-				<p class="call-head">Давайте дружить, это выгодно!</p>
-				<p class="call-secondary">Скидка 10% для друзей из социальных сетей</p>
-			</div>
-		</div>	
-	</footer>
+<footer class="page-footer">
+	<div class="page-footer__container">
+		<div class="social">
+			<a class="social__link social__link--vk" href="#">Вконтакте</a>
+      <a class="social__link social__link--fb" href="#">Фейсбук</a>
+      <a class="social__link social__link--inst" href="#">Инстаграм</a>
+		</div>
+		<div class="page-footer__promo">
+			<div class="page-footer__promo-title">Давайте дружить, это выгодно!</div>
+			<div class="page-footer__promo-bonus">Скидка 10% для друзей из социальных сетей</div>
+		</div>
+	</div>
+</footer>
+<!-- POP-UP -->
+<form class="write">
+  <div class="write__title">Напишите нам</div>
+    <div class="write__container">
+      <div class="write__wrapp">
+        <label class="write__label" for="name">Ваше имя:</label>
+        <input class="write__input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" tabindex="1">
+      </div>
+      <div class="write__wrapp">
+        <label class="write__label" for="email">Ваш e-mail:</label>
+        <input class="write__input write__input--email" type="email" name="email" id="email" placeholder="Для отправки ответа" tabindex="2">
+      </div>
+      <div class="write__wrapp">
+        <label class="write__label" for="text">Текст письма:</label>
+        <textarea class="write__textarea" id="text" rows="4" placeholder="В свободной форме" tabindex="3"></textarea>
+      </div>
+    </div>
+  <button class="write-btn">отправить</button>
+</form>
 </body>
 </html>
