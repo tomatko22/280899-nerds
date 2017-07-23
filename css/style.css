@@ -834,6 +834,30 @@ body {
 .form {
   width: 260px;
 }
+.form-btn {
+  display: block;
+  width: 260px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.form-btn:hover {
+  background-color: #dfdfdf;
+}
+.form-btn:active {
+  padding: 15px 0;
+  border-top: 3px solid #bfbfbf;
+  box-sizing: border-box;
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+}
 .form-block {
   width: 260px;
   margin-bottom: 53px;
@@ -926,6 +950,15 @@ body {
   line-height: 20px;
   color: #283136;
 }
+.form-block__label--radio:hover,
+.form-block__label--checkbox:hover {
+  color: #000000;
+  opacity: 1;
+}
+.form-block__label--radio:active,
+.form-block__label--checkbox:active {
+  opacity: 0.3;
+}
 .form-block__label--radio::before {
   content: "";
   position: absolute;
@@ -973,20 +1006,6 @@ body {
   width: 27px;
   height: 23px;
   background-position: -10px -88px;
-}
-.form-btn {
-  display: block;
-  width: 260px;
-  padding: 16px 0;
-  border: none;
-  border-radius: 3px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  background-color: #eeeeee;
 }
 .catalog {
   width: 760px;
@@ -1188,4 +1207,20 @@ body {
 }
 .pagination__item:last-child {
   margin-right: 0;
+}
+.pagination__item:hover {
+  border: 3px solid #dfdfdf;
+  background-color: #dfdfdf;
+}
+.pagination__item:active {
+  border: 3px solid #bfbfbf;
+  background-color: #d5d5d5;
+}
+.pagination__item--current:hover {
+  border: 3px solid #dbdbdb;
+  background-color: #ffffff;
+}
+.pagination__item--current:active {
+  border: 3px solid #dbdbdb;
+  background-color: #ffffff;
 }

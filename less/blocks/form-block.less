@@ -109,6 +109,17 @@
   color: #283136;
 }
 
+.form-block__label--radio:hover,
+.form-block__label--checkbox:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+.form-block__label--radio:active,
+.form-block__label--checkbox:active {
+  opacity: 0.3;
+}
+
 .form-block__label--radio::before {
   content: "";
   position: absolute;
@@ -167,19 +178,4 @@
   width: 27px;
   height: 23px;
   background-position: -10px -88px;
-}
-
-.form-btn {
-  display: block;
-  width: 260px;
-  padding: 16px 0;
-  border: none;
-  border-radius: 3px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  background-color: #eeeeee;
 }
