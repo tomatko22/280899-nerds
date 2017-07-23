@@ -156,7 +156,7 @@
       <div class="map__contacts-title">n&#203;rds design studio</div>
       <div class="map__contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/3</div>
       <div class="map__contacts-phone">тел. +7 (812) 275-75-75</div>
-      <button class="map-btn">напишите нам</button>
+      <a class="map-btn" href="#">напишите нам</a>
     </div>
   </div>
 </main>
@@ -177,8 +177,10 @@
 </footer>
 <!-- POP-UP -->
 <form class="write">
-  <div class="write__title">Напишите нам</div>
-    <div class="write__container">
+  <div class="write__container">
+    <div class="write__title">Напишите нам</div>
+    <button class="write-close" type="button" title="close">закрыть</button>
+    <div class="write__form">
       <div class="write__wrapp">
         <label class="write__label" for="name">Ваше имя:</label>
         <input class="write__input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" tabindex="1">
@@ -192,7 +194,9 @@
         <textarea class="write__textarea" id="text" rows="4" placeholder="В свободной форме" tabindex="3"></textarea>
       </div>
     </div>
-  <button class="write-btn">отправить</button>
+    <button class="write-btn">отправить</button>
+  </div>
 </form>
+<script src="js/popup.js"></script>
 </body>
 </html>

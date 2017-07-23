@@ -1,13 +1,10 @@
 .write {
-  visibility: hidden;
   position: absolute;
-
-  top: 1725px;
+  bottom: 186px;
   left: 50%;
   width: 960px;
 
-  display: flex;
-  flex-direction: column;
+  display: none;
 
   transform: translatex(-435px);
   padding: 68px 100px;
@@ -18,7 +15,16 @@
   box-sizing: border-box;
 }
 
+.write-show {
+  display: block;
+}
+
 .write__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.write__form {
   display: flex;
   flex-wrap: wrap;
   width: 760px;
@@ -32,21 +38,27 @@
   line-height: 45px;
 }
 
-.write__title::after {
-  content: "";
+.write-close {
   position: absolute;
-  top: 10px;
-  right: -10px;
-  width: 21px;
-  height: 21px;
+  top: 80px;
+  right: 90px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
   background-image: url("../img/sprite.png");
   background-position: -10px -131px;
+  background-color: transparent;
   opacity: 0.3;
+  border: 0;
 }
-.write__title:hover::after {
+
+.write-close:hover {
   opacity: 1;
 }
-.write__title:active::after {
+.write-close:active {
   opacity: 0.1;
 }
 .write__wrapp {
@@ -82,7 +94,8 @@
   }
 
   &--error {
-
+    color: #e74246;
+    border: 2px solid #e74246;
   }
 }
 .write__input:hover {
@@ -92,6 +105,7 @@
 .write__input:focus {
   color: #444444;
   border: 2px solid #000000;
+  outline: 0;
 }
 .write__input:invalid {
   border: 2px solid #e74246;
@@ -99,6 +113,7 @@
   color: #e74246;
 }
 .write__textarea {
+  min-height: 120px;
   padding: 10px 12px;
   border: 2px solid #d7dcde;
   box-sizing: border-box;
@@ -113,6 +128,7 @@
 .write__textarea:focus {
   color: #444444;
   border: 2px solid #000000;
+  outline: 0;
 }
 
 .write-btn {

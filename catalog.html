@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
 <body>
   <header class="page-header">
     <div class="page-header__container">
@@ -109,6 +109,8 @@
         <div class="catalog__list">
           <div class="catalog__card">
             <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
             <img class="catalog__card-img" src="img/sedona.jpg">
             <div class="catalog__card-info">
               <div class="catalog__card-title">Sedona</div>
@@ -118,6 +120,8 @@
           </div>
 
           <div class="catalog__card">
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
             <span class="catalog__card-marker"></span>
             <img src="img/pink.jpg">
             <div class="catalog__card-info">
@@ -129,6 +133,8 @@
 
           <div class="catalog__card">
             <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
             <img src="img/borodinsky.jpg">
             <div class="catalog__card-info">
               <div class="catalog__card-title">Barbershop</div>
@@ -138,6 +144,8 @@
           </div>
 
           <div class="catalog__card">
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
             <span class="catalog__card-marker"></span>
             <img src="img/mishka.jpg">
             <div class="catalog__card-info">
@@ -149,6 +157,8 @@
 
           <div class="catalog__card">
             <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
             <img src="img/aplus.jpg">
             <div class="catalog__card-info">
               <div class="catalog__card-title">A plus</div>
@@ -159,6 +169,8 @@
 
           <div class="catalog__card">
             <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
+            <span class="catalog__card-marker"></span>
             <img src="img/kvast.jpg">
             <div class="catalog__card-info">
               <div class="catalog__card-title">Кваст</div>
@@ -166,6 +178,12 @@
               <a class="catalog-btn" href="#">9 900 руб.</a>
             </div>
           </div>
+        </div>
+        <div class="pagination">
+          <a class="pagination__item pagination__item--current" >1</a>
+          <a class="pagination__item" href="#">2</a>
+          <a class="pagination__item" href="#">3</a>
+          <a class="pagination__item pagination__item--next" href="#">Следующая</a>
         </div>
       </div>
     </div>
@@ -193,24 +211,28 @@
       </div>
     </div>
   </footer>
-  <!-- POP-UP -->
-  <form class="write">
+<!-- POP-UP -->
+<form class="write">
+  <div class="write__container">
     <div class="write__title">Напишите нам</div>
-      <div class="write__container">
-        <div class="write__wrapp">
-          <label class="write__label" for="name">Ваше имя:</label>
-          <input class="write__input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" tabindex="1">
-        </div>
-        <div class="write__wrapp">
-          <label class="write__label" for="email">Ваш e-mail:</label>
-          <input class="write__input write__input--email" type="email" name="email" id="email" placeholder="Для отправки ответа" tabindex="2">
-        </div>
-        <div class="write__wrapp">
-          <label class="write__label" for="text">Текст письма:</label>
-          <textarea class="write__textarea" id="text" rows="4" placeholder="В свободной форме" tabindex="3"></textarea>
-        </div>
+    <button class="write-close" type="button" title="close">закрыть</button>
+    <div class="write__form">
+      <div class="write__wrapp">
+        <label class="write__label" for="name">Ваше имя:</label>
+        <input class="write__input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" tabindex="1">
       </div>
+      <div class="write__wrapp">
+        <label class="write__label" for="email">Ваш e-mail:</label>
+        <input class="write__input write__input--email" type="email" name="email" id="email" placeholder="Для отправки ответа" tabindex="2">
+      </div>
+      <div class="write__wrapp">
+        <label class="write__label" for="text">Текст письма:</label>
+        <textarea class="write__textarea" id="text" placeholder="В свободной форме" tabindex="3"></textarea>
+      </div>
+    </div>
     <button class="write-btn">отправить</button>
-  </form>
+  </div>
+</form>
+<script src="js/popup.js"></script>
 </body>
 </html>

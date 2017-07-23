@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  font-size: 0;
+}
+
+.pagination__item {
+  display: block;
+  width: 50px;
+  margin-right: 10px;
+  padding: 14px 0;
+  border: 3px solid #eeeeee;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+
+    &--current {
+      border: 3px solid #dbdbdb;
+      background-color: #ffffff;
+    }
+
+    &--next {
+      width: 260px;
+    }
+}
+.pagination__item:last-child {
+  margin-right: 0;
+}
